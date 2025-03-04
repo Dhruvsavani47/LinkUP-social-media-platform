@@ -41,9 +41,9 @@ mongoose.connect(URL, {tls: true})
    .then(() => console.log('Connected to MongoDB'))
    .catch(err => console.error(err));
 
-app.get('/', (req, res) => {
-    res.status(500).send('Hello World');
-})
+// app.get('/', (req, res) => {
+//     res.status(500).send('Hello World');
+// })
 
 server.listen(port, () => {
     console.log(`server is running on ${port}`);
