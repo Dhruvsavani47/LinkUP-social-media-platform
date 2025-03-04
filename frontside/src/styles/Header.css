@@ -1,0 +1,173 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    top: 0;
+    z-index: 100;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.header-left .highlight {
+    color: #007bff;
+}
+
+.header-center {
+    flex: 1;
+    position: relative;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.search-icon {
+    color: #007bff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header-centersearchclose {
+    position: absolute;
+    right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #333;
+    transition: opacity 0.3s ease;
+}
+
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 100;
+    margin-top: 8px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-icons a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav-icons .MuiIconButton-root {
+    padding: 10px;
+    color: #333;
+}
+
+.nav-icons .MuiIconButton-root:hover {
+    color: #007bff;
+}
+
+.nav-icons .MuiIconButton-root img:hover {
+    color: #007bff;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.profile-info .profile-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.profile-info .profile-name {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.active {
+    color: #007bff;
+}
+
+.MuiCircularProgress-root {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .header-center {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .search-bar {
+        width: 100%;
+        max-width: none;
+        padding: 5px 15px;
+    }
+
+    .header-right {
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+    .profile-info {
+        gap: 10px;
+    }
+
+    .nav-icons {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-icons a {
+        flex-grow: 1;
+        text-align: center;
+    }
+}

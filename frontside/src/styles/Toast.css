@@ -1,0 +1,28 @@
+.toast{
+    position:fixed;
+    top: 5px;
+    right:5px;
+    z-index:50; 
+    min-width:230px;
+    border: 0px solid white;
+    border-radius: 20px;
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+
+.toast-header{
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+}
+
+.toast-headertitle{
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.toast-headerclose{
+    margin-right: 50px;
+    cursor: pointer;
+}

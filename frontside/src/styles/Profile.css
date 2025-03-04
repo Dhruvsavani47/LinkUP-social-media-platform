@@ -1,0 +1,36 @@
+.profile{
+    background-color: #f4f4f4;
+}
+
+.profilebody{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.profileheader {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; 
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    width: 800px;
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 1rem auto;
+}
+
+.profileheader-items{
+    display: flex;
+    justify-content: center;
+}
+
+.profileheader-item{
+    margin-right: 30px;
+    margin-left: 30px;
+}

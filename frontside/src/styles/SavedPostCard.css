@@ -1,0 +1,82 @@
+.savepostcard {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.savepostcard-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+}
+
+.savepostcard-contentuserinfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.savedpostcard-contentinfodetail h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight:400;
+}
+
+.savedpostcard-contentinfodetail small {
+    margin: 0;
+    font-size: 14px;
+    color: gray;
+}
+
+.savepostcard-contentmiddle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 8px;
+    max-height: 300px;
+}
+
+.savepostcard-contentmiddle img,
+.savepostcard-contentmiddle video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.blue-round-like {
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 50%;
+    padding: 4px;
+    font-size: 24px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.savepostcard-contentend {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.savepostcard-contentenditem {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.savepostcard-contentendtime {
+    text-align: right;
+    font-size: 12px;
+    color: gray;
+}

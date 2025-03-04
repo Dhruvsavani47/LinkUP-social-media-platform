@@ -1,0 +1,252 @@
+/* postcard header  */
+
+.postcardheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #7d7d7d;
+    position: relative;
+    margin: 20px auto;
+}
+
+.postcardheader a {
+    text-decoration: none;
+    color: inherit;
+    flex-grow: 1;
+}
+
+.postcardheadertop {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.postcardheadertopavatar {
+    width: 50px !important;
+    height: 50px !important;
+    border: 2px solid #ddd;
+}
+
+.postcardheaderinfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.postcardheaderinfo h6 {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+    text-align: left;
+}
+
+.postcardheaderinfo h6 span {
+    font-size: 14px;
+    color: #888;
+}
+
+.postcardheaderinfo h6:last-child {
+    font-size: 12px;
+    color: #888;
+    font-weight: 400;
+    text-align: left;
+}
+
+.postcardheaderdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.postcardheaderdown svg {
+    color: #555;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.postcardheaderdown:hover svg {
+    color: #222;
+}
+
+.postcarddropdown {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    overflow: hidden;
+    min-width: 120px;
+    z-index: 10;
+}
+
+.postcarddropdown h6 {
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    background-color: rgb(170, 170, 170);
+}
+
+.postcarddropdown h6:hover {
+    background: #d5d5d5;
+}
+
+
+
+/* postcard body */
+
+.postcardbody {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.postcardbodycontent {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    word-break: break-word;
+    overflow: hidden;
+    transition: color 0.3s ease-in-out;
+    text-align: left;
+}
+
+.postcardbodycontentshowhide {
+    color: blue;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.postcardbodycontentshowhide:hover {
+    text-decoration: underline;
+}
+
+.postcardbodyimage {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.postcardbodyimages {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.postcardbodyimages img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.postcardbodyimagenext,
+.postcardbodyimageprev {
+    font-size: 36px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #007bff;
+    border-radius: 50%;
+    padding: 3px;
+    cursor: pointer;
+    transition: background 0.3s ease, opacity 0.3s ease;
+    opacity: 0.8;
+    z-index: 100;
+}
+
+.postcardbodyimagenext:hover,
+.postcardbodyimageprev:hover {
+    opacity: 1;
+}
+
+.postcardbodyimagenext {
+    top: 320px;
+    right: 180px;
+}
+
+.postcardbodyimageprev {
+    left: 180px;
+    top: 320px;
+}
+
+
+
+
+/* postcard footer */
+
+.postcardfooter {
+    padding: 10px 15px;
+    border-top: 1px solid #7d7d7d;
+}
+
+.postcardfootertop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.postcardfootertopitems {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #444;
+}
+
+.postcardfootertopitems span {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.postcardfooterbottom {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+}
+
+.postcardfooterbottomitems {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #888;
+}
+
+.postcardfooterbottomitems:hover {
+    color: #444;
+}
+
+.postcardfooterbottomitems span {
+    margin-left: 5px;
+}
+
+.postcardfooterbottomitems svg {
+    font-size: 18px;
+    color: #888;
+}
+
+.postcardfooterbottomitems:hover svg {
+    color: #555;
+    transform: scale(1.1);
+}
+
+.blue-round-like {
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 50%;
+    padding: 4px;
+    font-size: 24px;
+    transition: transform 0.2s, background-color 0.2s;
+}

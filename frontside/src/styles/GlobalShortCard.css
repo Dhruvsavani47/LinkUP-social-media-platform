@@ -1,0 +1,81 @@
+.showfriendsprofile {
+    width: 100%;
+    max-width: 310px;
+    background: #fff;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.showfriendsprofile:hover {
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.showfriendsprofileheader {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 12px;
+    text-align: center;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 8px;
+}
+
+.showfriendsprofile > *:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+
+
+.globalshortcard {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.globalshortcard:hover {
+    background: #f1f3f5;
+    transform: translateY(-2px);
+}
+
+.globalcardcontentavatar {
+    width: 45px !important;
+    height: 45px !important;
+    border: 2px solid #ddd;
+    transition: border 0.3s ease-in-out;
+}
+
+.globalshortcard:hover .globalcardcontentavatar {
+    border-color: #888;
+}
+
+.globalshortcardcontentinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.globalshortcardcontentinfofullname {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+    margin: 0;
+}
+
+.globalshortcardcontentinfousername {
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+    margin: 0;
+}
+
+

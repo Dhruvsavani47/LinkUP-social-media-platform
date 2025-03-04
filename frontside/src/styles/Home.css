@@ -1,0 +1,24 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.homemaincontainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.homemain-contentleft,
+.homemain-contentmid,
+.homemain-contentright {
+  padding: 15px;
+}
+
+/* .homemain-contentright {
+  margin-left: 20px;
+} */

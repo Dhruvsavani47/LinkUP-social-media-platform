@@ -1,0 +1,83 @@
+
+.randomusercard {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.randomusercard-container {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.randomusercard-container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    background: #d2d2d2;
+}
+
+.randomusercarduser-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #333;
+    flex-grow: 1;
+    padding: 4px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.randomusercarduser-avatar {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+}
+
+.randomusercarduser-details {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.randomusercarduser-fullname {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #222;
+}
+
+.randomusercarduser-username {
+    font-size: 1rem;
+    color: #555;
+}
+
+Button Styling
+.profileinfo-centerbtn {
+    background-color: #007bff;
+    color: black;
+    border: none;
+    padding: 3px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.profileinfo-centerbtn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 500px) {
+    .randomusercard-container {
+        max-width: 90%;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,175 @@
+.globalcard {
+  width: 300px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+.globalcardbackground .MuiAvatar-root{
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.globalcard-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.globalcard-contenttop {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.globalcard-contentmiddle {
+  display: flex;
+  justify-content: center;
+}
+
+.globalcard-contentmiddle .MuiAvatar-root {
+  width: 100px !important;
+  height: 100px !important;
+  border: 5px solid white;
+  transform: translateY(-50px);
+}
+
+.globalcard-contentmiddleinfo {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.globalcard-contentmiddleinfo h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 5px 0;
+}
+
+.globalcard-contentmiddleinfo h6 {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+.globalcard-contentbottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0;
+  border-top: 1px solid #f0f0f0;
+}
+
+.globalcard-contentbottomstat {
+  text-align: center;
+  flex: 1;
+}
+
+.globalcard-contentbottomstat h6 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.globalcard-contentbottomstat p {
+  font-size: 12px;
+  color: #777;
+  margin: 5px 0 0;
+}
+
+.globalcard-contentbottomstat:not(:last-child) {
+  border-right: 1px solid #f0f0f0;
+}
+
+.globalcard-contenttop .MuiAvatar-root,
+.globalcard-contentmiddle .MuiAvatar-root {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #f0f0f0;
+}
+
+.globalcard-centerbottomabout-story {
+  font-size: 12px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.globalcard-centerbottomabout-email {
+  font-size: 12px;
+  color: #0073e6;
+}
+
+.globalcard-centerbottomabout-website {
+  font-size: 12px;
+  color: #0073e6;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  text-decoration: underline;
+}
+
+.globalcard-centerbottomabout-website:hover {
+  color: #005bb5;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.font-bold {
+  font-weight: 600;
+}
+
+.globalcard-contentbottomnavigate:hover {
+  cursor: pointer;
+}
+
+.globalcard-contentbottombtn {
+  font-size: 14px;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px; 
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin: 5px;
+}
+
+@media (max-width: 768px) {
+  .globalcard {
+    width: 40%;
+  }
+
+  .globalcard-contentbottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .globalcard-contentbottomstat {
+    margin-bottom: 10px;
+    border: none;
+  }
+}
+
+@media (max-width: 545px) {
+  .globalcard {
+    width: 50%;
+  }
+
+  .globalcard-contentbottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .globalcard-contentbottomstat {
+    margin-bottom: 10px;
+    border: none;
+  }
+}
