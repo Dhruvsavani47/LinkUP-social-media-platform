@@ -35,10 +35,10 @@ app.use('/api', messageRouter);
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-app.use(express.static(path.join(__dirname, "frontside", "public")));
+app.use(express.static(path.join(__dirname, "..", "frontside", "public")));
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'frontside', 'public', 'index.html'));
+    res.sendFile(path.join(__dirname, "..", 'frontside', 'public', 'index.html'));
 })
 
 const port = process.env.PORT || 5000;
