@@ -6,9 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon backside/server.js",
-    "start": "NODE_ENV=production npm install --omit=dev && node backside/server.js"
-
-
+    "start": "NODE_ENV=production npm install --omit=dev && node backside/server.js",
+    "build": "npm install && npm install --prefix frontside && npm run build --prefix frontside"
   },
   "keywords": [],
   "author": "",
