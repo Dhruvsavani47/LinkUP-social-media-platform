@@ -7,8 +7,7 @@ export const register = async (req, res) => {
     try {
         const {fullname, username, email, password, gender} = req.body;
         const newUsername = username.toLowerCase().replace(/ /g, '');
-        const user_name = await Users.findOne({username: newUsername});    
-        npm list --depth=0
+        const user_name = await Users.findOne({username: newUsername});
 
         if(user_name){
             return res.status(400).json({msg: 'this username already exists'});
