@@ -12,6 +12,8 @@ import messageRouter from './routers/messageRouter.js';
 import http from 'http';
 import { Server } from 'socket.io';
 import { socketServer } from './socketServer.js';
+import path from "path";
+import { fileURLToPath } from "url";
 
 const app = express();
 const dot = dotenv.config();
@@ -30,6 +32,15 @@ app.use('/api', commentRouter);
 app.use('/api', notifyRouter);
 app.use('/api', messageRouter);
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+app.use(express.static(path.join(__dirname, "frontside", "dist")));
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'frontside', 'dist', 'index.html'));
+})
+
 const port = process.env.PORT || 5000;
 const URL = process.env.MONGO_URI;
 
@@ -40,6 +51,8 @@ io.on('connection', socket => {
 mongoose.connect(URL, {tls: true})
    .then(() => console.log('Connected to MongoDB'))
    .catch(err => console.error(err));
+
+// const __dirname = path.resolve();
 
 app.get('/', (req, res) => {
     res.status(500).send('Hello World');
